@@ -24,7 +24,7 @@ const SideAreaLeft = props => {
   const showToc = post && post.toc && post.toc.length > 1
   return <aside id='left' className='space-y-4 lg:w-80 lg:px-2 pt-8 hidden lg:block flex-col w-60 mr-4'>
 
-    <section className='w-60'>
+    <section className='w-60 pt-10'>
       {/* 菜单 */}
       <section className='shadow hover:shadow dark:text-gray-300 border dark:border-black rounded-xl px-2 py-2 bg-white dark:bg-hexo-black-gray lg:duration-100'>
         <div className='pt-2 px-2 font-sans'>

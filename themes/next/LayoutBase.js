@@ -59,7 +59,7 @@ const LayoutBase = (props) => {
 
       <main id='wrapper' className='flex justify-center flex-1 pb-12 pt-10'>
           <SideAreaLeft slot={leftAreaSlot} targetRef={targetRef} {...props}/>
-          <section id='center' className={`${CONFIG_NEXT.NAV_TYPE !== 'normal' ? 'mt-10' : ''} lg:max-w-3xl xl:max-w-4xl flex-grow md:mt-0 min-h-screen w-full`} ref={targetRef}>
+          <section id='center' className={`${CONFIG_NEXT.NAV_TYPE !== 'normal' ? 'mt-10' : ''} lg:max-w-3xl pr-2 xl:max-w-4xl flex-grow md:mt-0 min-h-screen w-full`} ref={targetRef}>
             {onLoading ? <LoadingCover/> : <> {children}</> }
           </section>
           <SideAreaRight targetRef={targetRef} slot={rightAreaSlot} {...props}/>

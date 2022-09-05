@@ -61,12 +61,12 @@ const SearchInput = ({ currentTag, currentSearch, cRef }) => {
     }
   }
 
-  return <div className='flex w-full bg-gray-100'>
+  return <div className='flex w-full'>
   <input
     ref={searchInputRef}
     type='text'
     placeholder={currentTag ? `${locale.SEARCH.TAGS} #${currentTag}` : `${locale.SEARCH.ARTICLES}`}
-    className={'w-full text-sm pl-4 transition focus:shadow-lg font-light leading-10 text-black bg-gray-100 dark:bg-gray-200 dark:text-white'}
+    className={'py-1.5 px-6 duration-300 text-sm justify-between hover:bg-gray-700 hover:text-white hover:shadow-lg cursor-pointer font-light flex flex-nowrap items-center bg-gray-200 text-black'}
     onKeyUp={handleKeyUp}
     onCompositionStart={lockSearchInput}
     onCompositionUpdate={lockSearchInput}

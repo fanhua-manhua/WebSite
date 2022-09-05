@@ -61,7 +61,7 @@ const SearchInput = ({ currentTag, currentSearch, cRef }) => {
     }
   }
 
-  return <div className='flex w-full'>
+  return <div className='flex w-full pb-2'>
   <input
     ref={searchInputRef}
     type='text'

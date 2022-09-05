@@ -10,11 +10,11 @@ const TagItem = ({ tag, selected }) => {
   return (
   <Link href={selected ? '/' : `/tag/${encodeURIComponent(tag.name)}`} passHref>
     <li
-      className={`cursor-pointer inline-block rounded hover:bg-indigo-400 dark:hover:text-white  hover:text-white duration-200
-      mr-2 py-0.5 px-1 text-xs whitespace-nowrap 
-       ${selected
-      ? 'text-white dark:text-gray-300 bg-black dark:bg-black dark:hover:bg-indigo-900'
-      : `text-gray-600 hover:shadow-xl dark:border-gray-400 notion-${tag.color}_background `}` }
+      className={`notion-${tag.color}_background dark:bg-gray-700 list-none cursor-pointer rounded-md  
+      duration-200 mr-1 my-1 px-2 py-1 text-sm whitespace-nowrap 
+       hover:bg-gray-200 dark:hover:bg-gray-800 `}>
+      <div className='text-gray-600 dark:text-gray-300 dark:hover:text-white'>
+        {selected && <i className='fas fa-tag mr-1'/>} {`${tag.name} `} {tag.count ? `(${tag.count})` : ''}
       </div>
     </li>
   </Link>

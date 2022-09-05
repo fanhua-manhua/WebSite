@@ -62,7 +62,7 @@ const BlogPostCard = ({ post, showSummary }) => {
 
           <div className="text-gray-400 justify-between flex">
             <Link href={`/category/${post.category}`} passHref>
-              <a className="cursor-pointer font-light text-sm hover:underline hover:text-indigo-700 dark:hover:text-indigo-400 transform">
+              <a className="cursor-pointer pr-2 font-light text-sm hover:underline hover:text-indigo-700 dark:hover:text-indigo-400 transform">
                 <i className="mr-1 far fa-folder" />
                 {post.category}
               </a>

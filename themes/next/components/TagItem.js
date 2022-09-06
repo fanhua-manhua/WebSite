@@ -13,7 +13,7 @@ const TagItem = ({ tag, selected }) => {
       className={`notion-${tag.color}_background list-none cursor-pointer rounded-md  
       duration-200 mr-1 my-1 px-2 py-1 text-sm whitespace-nowrap 
        hover:bg-gray-200 dark:hover:bg-gray-800 `}>
-      <div className='text-gray-600 dark:text-gray-300 dark:hover:text-white'>
+      <div className='text-gray-600 dark:hover:text-white'>
         {selected && <i className='fas fa-tag mr-1'/>} {`${tag.name} `} {tag.count ? `(${tag.count})` : ''}
       </div>
     </li>

@@ -32,7 +32,7 @@ export const ArticleLock = props => {
           <div className="flex">
             <input
               id="password" type='password'
-              className="w-full text-sm pl-5 transition focus:shadow-lg dark:text-gray-600 font-light leading-10 text-black bg-gray-100 dark:bg-gray-200"
+              className="w-full text-sm pl-5 transition focus:shadow-lg font-light leading-10 text-black bg-gray-100"
             ></input>
             <div
               onClick={submitPassword}

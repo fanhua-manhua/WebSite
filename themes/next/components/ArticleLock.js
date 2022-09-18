@@ -25,8 +25,7 @@ export const ArticleLock = props => {
   }
 
   return (
-    <div id='container' className="class="shadow md:hover:shadow-2xl overflow-x-auto flex-grow mx-auto w-screen md:w-full py-10 px-5 lg:pt-24 md:px-24 min-h-screen dark:border-gray-700 bg-white dark:bg-hexo-black-gray duration-200"">
-      <div className="w-full flex justify-center items-center h-96 font-sans">
+    <div id='container' className="shadow md:hover:shadow-2xl overflow-x-auto flex-grow mx-auto w-screen md:w-full  py-10 px-5 lg:pt-24 md:px-24 min-h-screen dark:border-gray-700 bg-white dark:bg-gray-800 duration-200">      <div className="w-full flex justify-center items-center h-96 font-sans">
         <div className="text-center space-y-3">
           <div className='font-bold text-black dark:text-white'>{locale.COMMON.ARTICLE_LOCK_TIPS}</div>
           <div className="flex">

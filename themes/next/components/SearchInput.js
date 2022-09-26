@@ -66,7 +66,7 @@ const SearchInput = ({ currentTag, currentSearch, cRef }) => {
     ref={searchInputRef}
     type='text'
     placeholder={currentTag ? `${locale.SEARCH.TAGS} #${currentTag}` : `${locale.SEARCH.ARTICLES}`}
-    className={'rounded-md py-1.5 px-6 duration-300 text-sm justify-between hover:bg-gray-700 hover:text-white hover:shadow-lg cursor-pointer font-light flex flex-nowrap items-center bg-gray-200 text-black'}
+    className={'w-full rounded-md py-1.5 px-6 duration-300 text-sm justify-between hover:bg-gray-700 hover:text-white hover:shadow-lg cursor-pointer font-light flex flex-nowrap items-center bg-gray-200 text-black'}
     onKeyUp={handleKeyUp}
     onCompositionStart={lockSearchInput}
     onCompositionUpdate={lockSearchInput}
